@@ -1,3 +1,4 @@
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,27 +9,35 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   return (
     <div className="space-y-10">
+      {/* Out of Date Banner */}
+      <Alert>
+        <AlertTitle>This information is out of date</AlertTitle>
+        <AlertDescription>
+          The information on this page is outdated. Keir Starmer has been elected as the new Prime Minister.
+        </AlertDescription>
+      </Alert>
+
       {/* Hero Section */}
       <section className="text-center py-10 bg-gray-100">
         <img
-          src="/images/rishi-sunak.jpg"
-          alt="Rishi Sunak"
+          src="/images/keir-starmer.jpg"
+          alt="Keir Starmer"
           className="mx-auto object-cover w-full h-[400px] rounded-lg shadow-lg"
         />
-        <h1 className="text-4xl font-bold mt-4">Prime Minister Rishi Sunak</h1>
+        <h1 className="text-4xl font-bold mt-4">Prime Minister Keir Starmer</h1>
         <p className="text-xl mt-2">Leading the United Kingdom with vision and integrity</p>
       </section>
 
       {/* About Section */}
       <section className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4">About Rishi Sunak</h2>
+        <h2 className="text-3xl font-bold mb-4">About Keir Starmer</h2>
         <p>
-          Rishi Sunak is the Prime Minister of the United Kingdom, known for his dedication to public service and his vision for a prosperous and inclusive nation. With a background in finance and a commitment to innovation, he has been instrumental in driving economic growth and fostering a culture of opportunity for all citizens.
+          Keir Starmer is the Prime Minister of the United Kingdom, known for his dedication to public service and his vision for a prosperous and inclusive nation. With a background in law and a commitment to justice, he has been instrumental in driving social reforms and fostering a culture of opportunity for all citizens.
         </p>
         <p className="mt-4">
           Achievements:
           <ul className="list-disc list-inside">
-            <li>Implemented significant economic reforms to boost growth</li>
+            <li>Implemented significant social reforms to promote equality</li>
             <li>Advocated for sustainable and green energy solutions</li>
             <li>Strengthened international relations and trade partnerships</li>
           </ul>
@@ -41,11 +50,11 @@ const Index = () => {
         <div className="space-y-4">
           <Card>
             <CardHeader>
-              <CardTitle>Rishi Sunak Announces New Economic Plan</CardTitle>
+              <CardTitle>Keir Starmer Announces New Social Plan</CardTitle>
               <p className="text-sm text-gray-500">Date: 2023-10-01</p>
             </CardHeader>
             <CardContent>
-              <p>Prime Minister Rishi Sunak has unveiled a comprehensive economic plan aimed at fostering growth and innovation across the United Kingdom.</p>
+              <p>Prime Minister Keir Starmer has unveiled a comprehensive social plan aimed at fostering equality and justice across the United Kingdom.</p>
             </CardContent>
           </Card>
           <Card>
@@ -54,7 +63,7 @@ const Index = () => {
               <p className="text-sm text-gray-500">Date: 2023-09-25</p>
             </CardHeader>
             <CardContent>
-              <p>In a bold move towards sustainability, Rishi Sunak has announced new policies to position the UK as a leader in green energy solutions.</p>
+              <p>In a bold move towards sustainability, Keir Starmer has announced new policies to position the UK as a leader in green energy solutions.</p>
             </CardContent>
           </Card>
           {/* Add more news items as needed */}
